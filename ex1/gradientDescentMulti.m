@@ -17,16 +17,10 @@ for iter = 1:num_iters
     %       of the cost function (computeCostMulti) and gradient here.
     %
 
-
-
-
-
-
-
-
-
-
-
+    J = alpha*(1/m)*X'*(X*theta-y)
+    
+    theta = theta - J
+    
     % ============================================================
 
     % Save the cost J in every iteration    
